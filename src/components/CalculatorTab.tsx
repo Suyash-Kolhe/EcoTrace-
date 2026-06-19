@@ -84,13 +84,14 @@ export const CalculatorTab: React.FC<CalculatorTabProps> = ({
             <div className="space-y-4 pt-2">
               {/* Petrol Car (km/year) */}
               <div>
-                <label className="block text-xs sm:text-sm font-bold text-zinc-800 mb-1.5 flex items-center justify-between">
+                <label htmlFor="petrolCarKm" className="block text-xs sm:text-sm font-bold text-zinc-800 mb-1.5 flex items-center justify-between">
                   <span>Petrol Car <span className="text-zinc-400 font-normal lowercase">(km/year)</span></span>
                   <span className="font-mono text-[11px] font-bold text-emerald-700 bg-emerald-50 border border-emerald-100 rounded px-2 py-0.5">
                     ~{((inputs.transport.petrolCarKm || 0) * 0.18).toFixed(1)} kg CO₂/yr
                   </span>
                 </label>
                 <input
+                  id="petrolCarKm"
                   type="number"
                   min="0"
                   value={inputs.transport.petrolCarKm || 0}
@@ -109,13 +110,14 @@ export const CalculatorTab: React.FC<CalculatorTabProps> = ({
 
               {/* Diesel Car (km/year) */}
               <div>
-                <label className="block text-xs sm:text-sm font-bold text-zinc-800 mb-1.5 flex items-center justify-between">
+                <label htmlFor="dieselCarKm" className="block text-xs sm:text-sm font-bold text-zinc-800 mb-1.5 flex items-center justify-between">
                   <span>Diesel Car <span className="text-zinc-400 font-normal lowercase">(km/year)</span></span>
                   <span className="font-mono text-[11px] font-bold text-emerald-700 bg-emerald-50 border border-emerald-100 rounded px-2 py-0.5">
                     ~{((inputs.transport.dieselCarKm || 0) * 0.17).toFixed(1)} kg CO₂/yr
                   </span>
                 </label>
                 <input
+                  id="dieselCarKm"
                   type="number"
                   min="0"
                   value={inputs.transport.dieselCarKm || 0}
@@ -132,13 +134,14 @@ export const CalculatorTab: React.FC<CalculatorTabProps> = ({
 
               {/* Electric Vehicle (km/year) */}
               <div>
-                <label className="block text-xs sm:text-sm font-bold text-zinc-800 mb-1.5 flex items-center justify-between">
+                <label htmlFor="electricCarKm" className="block text-xs sm:text-sm font-bold text-zinc-800 mb-1.5 flex items-center justify-between">
                   <span>Electric Vehicle <span className="text-zinc-400 font-normal lowercase">(km/year)</span></span>
                   <span className="font-mono text-[11px] font-bold text-emerald-700 bg-emerald-50 border border-emerald-100 rounded px-2 py-0.5">
                     ~{((inputs.transport.electricCarKm || 0) * 0.04).toFixed(1)} kg CO₂/yr
                   </span>
                 </label>
                 <input
+                  id="electricCarKm"
                   type="number"
                   min="0"
                   value={inputs.transport.electricCarKm || 0}
@@ -155,13 +158,14 @@ export const CalculatorTab: React.FC<CalculatorTabProps> = ({
 
               {/* Bus (km/year) */}
               <div>
-                <label className="block text-xs sm:text-sm font-bold text-zinc-800 mb-1.5 flex items-center justify-between">
+                <label htmlFor="busKm" className="block text-xs sm:text-sm font-bold text-zinc-800 mb-1.5 flex items-center justify-between">
                   <span>Bus <span className="text-zinc-400 font-normal lowercase">(km/year)</span></span>
                   <span className="font-mono text-[11px] font-bold text-emerald-700 bg-emerald-50 border border-emerald-100 rounded px-2 py-0.5">
                     ~{((inputs.transport.busKm || 0) * 0.08).toFixed(1)} kg CO₂/yr
                   </span>
                 </label>
                 <input
+                  id="busKm"
                   type="number"
                   min="0"
                   value={inputs.transport.busKm || 0}
@@ -178,13 +182,14 @@ export const CalculatorTab: React.FC<CalculatorTabProps> = ({
 
               {/* Train / Metro (km/year) */}
               <div>
-                <label className="block text-xs sm:text-sm font-bold text-zinc-800 mb-1.5 flex items-center justify-between">
+                <label htmlFor="trainMetroKm" className="block text-xs sm:text-sm font-bold text-zinc-800 mb-1.5 flex items-center justify-between">
                   <span>Train / Metro <span className="text-zinc-400 font-normal lowercase">(km/year)</span></span>
                   <span className="font-mono text-[11px] font-bold text-emerald-700 bg-emerald-50 border border-emerald-100 rounded px-2 py-0.5">
                     ~{((inputs.transport.trainMetroKm || 0) * 0.03).toFixed(1)} kg CO₂/yr
                   </span>
                 </label>
                 <input
+                  id="trainMetroKm"
                   type="number"
                   min="0"
                   value={inputs.transport.trainMetroKm || 0}
@@ -201,13 +206,14 @@ export const CalculatorTab: React.FC<CalculatorTabProps> = ({
 
               {/* Short-Haul Flights (flights/year) */}
               <div>
-                <label className="block text-xs sm:text-sm font-bold text-zinc-800 mb-1.5 flex items-center justify-between">
+                <label htmlFor="flightsShort" className="block text-xs sm:text-sm font-bold text-zinc-800 mb-1.5 flex items-center justify-between">
                   <span>Short-Haul Flights <span className="text-zinc-400 font-normal lowercase">(flights/year)</span></span>
                   <span className="font-mono text-[11px] font-bold text-emerald-700 bg-emerald-50 border border-emerald-100 rounded px-2 py-0.5">
                     ~{((inputs.transport.flightsShort || 0) * 220).toFixed(0)} kg CO₂/yr
                   </span>
                 </label>
                 <input
+                  id="flightsShort"
                   type="number"
                   min="0"
                   value={inputs.transport.flightsShort || 0}
@@ -224,13 +230,14 @@ export const CalculatorTab: React.FC<CalculatorTabProps> = ({
 
               {/* Long-Haul Flights (flights/year) */}
               <div>
-                <label className="block text-xs sm:text-sm font-bold text-zinc-800 mb-1.5 flex items-center justify-between">
+                <label htmlFor="flightsLong" className="block text-xs sm:text-sm font-bold text-zinc-800 mb-1.5 flex items-center justify-between">
                   <span>Long-Haul Flights <span className="text-zinc-400 font-normal lowercase">(flights/year)</span></span>
                   <span className="font-mono text-[11px] font-bold text-emerald-700 bg-emerald-50 border border-emerald-100 rounded px-2 py-0.5">
                     ~{((inputs.transport.flightsLong || 0) * 950).toFixed(0)} kg CO₂/yr
                   </span>
                 </label>
                 <input
+                  id="flightsLong"
                   type="number"
                   min="0"
                   value={inputs.transport.flightsLong || 0}
@@ -270,13 +277,14 @@ export const CalculatorTab: React.FC<CalculatorTabProps> = ({
             <div className="space-y-4 pt-2">
               {/* Electricity (kWh/year) */}
               <div>
-                <label className="block text-xs sm:text-sm font-bold text-zinc-800 mb-1.5 flex items-center justify-between">
+                <label htmlFor="electricityKwh" className="block text-xs sm:text-sm font-bold text-zinc-800 mb-1.5 flex items-center justify-between">
                   <span>Electricity <span className="text-zinc-400 font-normal lowercase">(kWh/year)</span></span>
                   <span className="font-mono text-[11px] font-bold text-[#b58014] bg-amber-50 border border-amber-100 rounded px-2 py-0.5">
                     ~{((inputs.energy.electricityKwh || 0) * 0.82).toLocaleString('en-IN', { maximumFractionDigits: 1 })} kg CO₂/yr
                   </span>
                 </label>
                 <input
+                  id="electricityKwh"
                   type="number"
                   min="0"
                   value={inputs.energy.electricityKwh || 0}
@@ -293,13 +301,14 @@ export const CalculatorTab: React.FC<CalculatorTabProps> = ({
 
               {/* Natural Gas (kWh/year) */}
               <div>
-                <label className="block text-xs sm:text-sm font-bold text-zinc-800 mb-1.5 flex items-center justify-between">
+                <label htmlFor="naturalGasKwh" className="block text-xs sm:text-sm font-bold text-zinc-800 mb-1.5 flex items-center justify-between">
                   <span>Natural Gas <span className="text-zinc-400 font-normal lowercase">(kWh/year)</span></span>
                   <span className="font-mono text-[11px] font-bold text-[#b58014] bg-amber-50 border border-amber-100 rounded px-2 py-0.5">
                     ~{((inputs.energy.naturalGasKwh || 0) * 0.185).toLocaleString('en-IN', { maximumFractionDigits: 1 })} kg CO₂/yr
                   </span>
                 </label>
                 <input
+                  id="naturalGasKwh"
                   type="number"
                   min="0"
                   value={inputs.energy.naturalGasKwh || 0}
@@ -316,13 +325,14 @@ export const CalculatorTab: React.FC<CalculatorTabProps> = ({
 
               {/* Household Size (people) */}
               <div>
-                <label className="block text-xs sm:text-sm font-bold text-zinc-800 mb-1.5 flex items-center justify-between">
+                <label htmlFor="householdSize" className="block text-xs sm:text-sm font-bold text-zinc-800 mb-1.5 flex items-center justify-between">
                   <span>Household Size <span className="text-zinc-400 font-normal lowercase">(people)</span></span>
                   <span className="font-mono text-[11px] font-bold text-emerald-800 bg-emerald-50 border border-emerald-100 rounded px-2 py-0.5">
                     Split share: {((1 / (inputs.energy.householdSize || 1)) * 100).toFixed(0)}%
                   </span>
                 </label>
                 <input
+                  id="householdSize"
                   type="number"
                   min="1"
                   value={inputs.energy.householdSize || 1}
@@ -400,12 +410,13 @@ export const CalculatorTab: React.FC<CalculatorTabProps> = ({
 
             <div className="mt-4">
               <div className="flex justify-between items-center text-sm mb-1.5">
-                <span className="font-bold text-zinc-700 text-xs">Organic Sourcing Share</span>
+                <label htmlFor="organicShare" className="font-bold text-zinc-700 text-xs">Organic Sourcing Share</label>
                 <span className="font-mono text-emerald-700 font-extrabold bg-[#f0f9f3] px-2.5 py-0.5 rounded text-xs border border-emerald-100">
                   {inputs.food.organicShare}%
                 </span>
               </div>
               <input
+                id="organicShare"
                 type="range"
                 min="0"
                 max="100"
@@ -435,7 +446,7 @@ export const CalculatorTab: React.FC<CalculatorTabProps> = ({
 
             <div className="mt-4 bg-zinc-50/50 p-4 rounded-xl border border-zinc-200">
               <div className="flex justify-between items-center text-sm mb-1.5">
-                <span className="font-bold text-zinc-700 text-xs">Estimated Food Waste</span>
+                <label htmlFor="foodWasteShare" className="font-bold text-zinc-700 text-xs">Estimated Food Waste</label>
                 <span className={`font-mono font-extrabold px-2.5 py-0.5 rounded text-xs border ${
                   inputs.food.foodWasteShare < 15 ? 'bg-emerald-50 text-emerald-700 border-emerald-100' : 'bg-orange-50 text-orange-700 border-orange-100'
                 }`}>
@@ -443,6 +454,7 @@ export const CalculatorTab: React.FC<CalculatorTabProps> = ({
                 </span>
               </div>
               <input
+                id="foodWasteShare"
                 type="range"
                 min="0"
                 max="80"
@@ -476,12 +488,13 @@ export const CalculatorTab: React.FC<CalculatorTabProps> = ({
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
               <div className="bg-white p-4 rounded-xl border border-zinc-200 shadow-2xs">
                 <div className="flex justify-between items-center text-sm mb-1.5">
-                  <span className="font-bold text-zinc-700 text-xs uppercase">Clothing Habits</span>
+                  <label htmlFor="clothesMonthly" className="font-bold text-zinc-700 text-xs uppercase">Clothing Habits</label>
                   <span className="font-mono text-purple-700 font-extrabold bg-[#fbf7fc] px-2 py-0.5 rounded text-xs border border-purple-200">
                     ₹{inputs.shopping.clothesMonthly.toLocaleString('en-IN')} / month
                   </span>
                 </div>
                 <input
+                  id="clothesMonthly"
                   type="range"
                   min="0"
                   max="25000"
@@ -499,12 +512,13 @@ export const CalculatorTab: React.FC<CalculatorTabProps> = ({
 
               <div className="bg-white p-4 rounded-xl border border-zinc-200 shadow-2xs">
                 <div className="flex justify-between items-center text-sm mb-1.5">
-                  <span className="font-bold text-zinc-700 text-xs uppercase">Electronics & Tech Sourcing</span>
+                  <label htmlFor="electronicsYearly" className="font-bold text-zinc-700 text-xs uppercase">Electronics & Tech Sourcing</label>
                   <span className="font-mono text-purple-700 font-extrabold bg-[#fbf7fc] px-2 py-0.5 rounded text-xs border border-purple-200">
                     ₹{inputs.shopping.electronicsYearly.toLocaleString('en-IN')} / year
                   </span>
                 </div>
                 <input
+                  id="electronicsYearly"
                   type="range"
                   min="0"
                   max="150000"
