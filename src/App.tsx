@@ -298,6 +298,7 @@ export default function App() {
               onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
               className="inline-flex items-center justify-center p-2 rounded-lg border border-zinc-200 transition-all cursor-pointer bg-white text-zinc-500 hover:text-emerald-700 hover:bg-emerald-50 dark:hover:bg-zinc-800 focus:outline-none focus:ring-1 focus:ring-emerald-500"
               title={theme === 'light' ? 'Switch to Dark Mode' : 'Switch to Light Mode'}
+              aria-label={theme === 'light' ? 'Switch to Dark Mode' : 'Switch to Light Mode'}
               id="theme-toggle-button"
             >
               {theme === 'light' ? (

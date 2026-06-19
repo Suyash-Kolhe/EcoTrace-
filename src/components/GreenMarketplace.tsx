@@ -644,7 +644,7 @@ export const GreenMarketplace: React.FC<GreenMarketplaceProps> = ({
                 <a
                   href={brand.websiteUrl}
                   target="_blank"
-                  rel="noreferrer referrerPolicy"
+                  rel="noopener noreferrer"
                   className="w-full py-2 bg-zinc-900 border border-zinc-800 hover:bg-zinc-850 dark:bg-zinc-100 dark:border-zinc-200 dark:hover:bg-zinc-200 text-white dark:text-zinc-900 font-extrabold text-center rounded-lg text-[10px] uppercase tracking-wider inline-flex items-center justify-center gap-1.5 transition-all shadow-3xs"
                 >
                   <span>Explore Clean Option</span>

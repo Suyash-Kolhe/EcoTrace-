@@ -213,6 +213,7 @@ export const TrustFAQModal: React.FC<TrustFAQModalProps> = ({ isOpen, onClose })
             
             <button 
               onClick={onClose}
+              aria-label="Close modal"
               className="p-1.5 hover:bg-zinc-200 text-zinc-450 hover:text-zinc-700 rounded-lg transition-all cursor-pointer"
             >
               <X size={18} />
@@ -307,7 +308,7 @@ export const TrustFAQModal: React.FC<TrustFAQModalProps> = ({ isOpen, onClose })
                 <a 
                   href="https://www.ipcc.ch/report/sixth-assessment-report-cycle/" 
                   target="_blank" 
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   referrerPolicy="no-referrer"
                   className="bg-zinc-50 border border-zinc-200 p-3 rounded-lg flex items-start gap-2 text-[10.5px] hover:border-emerald-300 hover:bg-emerald-50/10 transition group"
                 >
@@ -322,7 +323,7 @@ export const TrustFAQModal: React.FC<TrustFAQModalProps> = ({ isOpen, onClose })
                 <a 
                   href="https://www.nature.com/articles/nclimate2073" 
                   target="_blank" 
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   referrerPolicy="no-referrer"
                   className="bg-zinc-50 border border-zinc-200 p-3 rounded-lg flex items-start gap-2 text-[10.5px] hover:border-emerald-300 hover:bg-emerald-50/10 transition group"
                 >
@@ -337,7 +338,7 @@ export const TrustFAQModal: React.FC<TrustFAQModalProps> = ({ isOpen, onClose })
                 <a 
                   href="https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2023" 
                   target="_blank" 
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   referrerPolicy="no-referrer"
                   className="bg-zinc-50 border border-zinc-200 p-3 rounded-lg flex items-start gap-2 text-[10.5px] hover:border-emerald-300 hover:bg-emerald-50/10 transition group"
                 >
@@ -352,7 +353,7 @@ export const TrustFAQModal: React.FC<TrustFAQModalProps> = ({ isOpen, onClose })
                 <a 
                   href="https://www.epa.gov/energy/greenhouse-gas-equivalencies-calculator" 
                   target="_blank" 
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   referrerPolicy="no-referrer"
                   className="bg-zinc-50 border border-zinc-200 p-3 rounded-lg flex items-start gap-2 text-[10.5px] hover:border-emerald-300 hover:bg-emerald-50/10 transition group"
                 >

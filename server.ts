@@ -131,7 +131,7 @@ async function startServer() {
       console.error("Gemini Insight generation failed:", error);
       res.status(500).json({
         error: "Failed to generate dynamic AI Insights.",
-        details: error.message
+        details: process.env.NODE_ENV !== "production" ? error.message : "Service temporarily unavailable"
       });
     }
   });
