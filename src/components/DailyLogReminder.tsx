@@ -415,6 +415,7 @@ export const DailyLogReminder: React.FC<DailyLogReminderProps> = ({
             <button
               onClick={() => setCelebrationMessage(null)}
               className="text-emerald-400 hover:text-emerald-250 cursor-pointer text-xs font-bold px-1.5"
+              aria-label="Dismiss celebration message"
             >
               ×
             </button>
@@ -653,6 +654,7 @@ export const DailyLogReminder: React.FC<DailyLogReminderProps> = ({
                                   onClick={() => handleRemoveManualActivity(item.id)}
                                   className="p-1.5 text-zinc-400 hover:text-rose-600 rounded-lg hover:bg-rose-50 transition cursor-pointer"
                                   title="Delete entry"
+                                  aria-label="Delete entry"
                                 >
                                   <Trash2 size={13} />
                                 </button>
